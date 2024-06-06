@@ -7,11 +7,7 @@ import ru.skillbox.currency.exchange.dto.CurrencyDto;
 import ru.skillbox.currency.exchange.dto.CurrencyNameAndValue;
 import ru.skillbox.currency.exchange.dto.CurrencyResponse;
 import ru.skillbox.currency.exchange.service.CurrencyService;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
