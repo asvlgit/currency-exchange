@@ -10,9 +10,9 @@ spring:
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://ssdpgdbl.ssd.admin.local:5434/skillbox
+    username: skillbox
+    password: skillbox
   jpa:
     properties:
       hibernate:
