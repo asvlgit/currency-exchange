@@ -38,6 +38,17 @@ public class CurrencyService {
 
     public CurrencyDto create(CurrencyDto dto) {
         log.info("CurrencyService method create executed");
-        return  mapper.convertToDto(repository.save(mapper.convertToEntity(dto)));
+        return mapper.convertToDto(repository.save(mapper.convertToEntity(dto)));
+    }
+
+    public void save(CurrencyDto dto) {
+        log.info("CurrencyService method save executed");
+        Currency currency = repository.findByIsoNumCode(dto.getIsoNumCode());
+        if (currency == null) {
+            currency = mapper.convertToEntity(dto);
+        } else {
+            mapper.updateCurrencyFromDto(dto, currency);
+        }
+        repository.save(currency);
     }
 }

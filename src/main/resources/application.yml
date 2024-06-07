@@ -21,3 +21,5 @@ spring:
         hbm2ddl:
           auto: none
 
+api:
+  central_bank_currency_url: "https://cbr.ru/scripts/XML_daily.asp"
