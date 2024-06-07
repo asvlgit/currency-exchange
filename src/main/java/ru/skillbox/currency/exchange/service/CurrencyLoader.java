@@ -23,7 +23,7 @@ public class CurrencyLoader {
     private final CurrencyMapper mapper;
 
     @Value("${api.central_bank_currency_url}")
-    private String xmlUrl;
+    private final String xmlUrl;
 
     @Scheduled(fixedDelay = 3_600_000)
     public void load() {
